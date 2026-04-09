@@ -53,7 +53,7 @@ const EliteLoader = () => {
                                 transition={{ delay: 0.2, duration: 0.4 }}
                                 className="text-text font-serif text-lg tracking-[0.1em]"
                             >
-                                SHRI GANGA VATIKA
+                                NAARI HOMESTAY
                             </motion.h1>
                             <motion.span
                                 initial={{ opacity: 0 }}
@@ -61,7 +61,7 @@ const EliteLoader = () => {
                                 transition={{ delay: 0.4, duration: 0.4 }}
                                 className="text-[8px] uppercase tracking-[0.4em] text-primary font-semibold"
                             >
-                                Hotel & Restaurant
+                                Home-Stays-Home • Mathura
                             </motion.span>
                         </div>
                     </div>

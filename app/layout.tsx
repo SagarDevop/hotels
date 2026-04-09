@@ -17,6 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.naarihomestay.com"),
   title: "Naari Homestay, Mathura | Premium Family Sanctuary Near Janmabhoomi",
   description: "Experience the ultimate family stay at Naari Homestay Mathura. Safe, peaceful AC rooms opposite Police Chowki, just 10 mins from Shri Krishna Janmabhoomi. Private kitchens available. Book your Mathura Yatra today.",
   keywords: [

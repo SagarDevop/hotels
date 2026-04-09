@@ -51,19 +51,23 @@ class BehavioralTracker {
     };
 
     // Periodically check queue
-    setInterval(processQueue, 5000);
+    if (typeof window !== 'undefined') {
+      setInterval(processQueue, 5000);
 
-    // Flush on page exit
-    window.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'hidden') {
-        this.flush(true);
-      }
-    });
+      // Flush on page exit
+      window.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          this.flush(true);
+        }
+      });
+    }
 
     this.initialized = true;
   }
 
   public track(event: Omit<TrackEvent, 'timestamp' | 'url'>) {
+    if (typeof window === 'undefined') return;
+
     const fullEvent: TrackEvent = {
       ...event,
       timestamp: Date.now(),
