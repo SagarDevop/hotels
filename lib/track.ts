@@ -119,4 +119,6 @@ class BehavioralTracker {
   }
 }
 
-export const tracker = BehavioralTracker.getInstance();
+export const tracker = typeof window !== 'undefined' 
+  ? BehavioralTracker.getInstance() 
+  : { track: () => {} } as any as BehavioralTracker;

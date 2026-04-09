@@ -1,14 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Users, Gift, Share2, ArrowRight } from "lucide-react";
 import { siteConfig } from "@/lib/siteConfig";
 
 const ReferralSection = () => {
-  const referralMsg = encodeURIComponent(
-    `Hi! I'm planning a trip to Mathura and found this amazing family homestay 'Naari Homestay'. They have great family packages and home-style food. Check it out: ${window.location.origin}`
-  );
+  const [referralMsg, setReferralMsg] = useState("");
+
+  useEffect(() => {
+    const origin = typeof window !== 'undefined' ? window.location.origin : "";
+    const msg = encodeURIComponent(
+      `Hi! I'm planning a trip to Mathura and found this amazing family homestay 'Naari Homestay'. They have great family packages and home-style food. Check it out: ${origin}`
+    );
+    setReferralMsg(msg);
+  }, []);
 
   return (
     <section className="py-12 bg-primary/5 border-y border-primary/10">
