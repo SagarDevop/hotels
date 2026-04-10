@@ -1,9 +1,9 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextRequest, NextResponse } from "next/server";
 
-const GEMINI_API_KEY = "AIzaSyDNB-JxzopSysC73yOWpSql9PupeQ1J0lY"
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
  
-const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI(GEMINI_API_KEY || "");
 
 const PHONE_NUMBER = "919359923689";
 
