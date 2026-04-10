@@ -40,7 +40,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning className={`h-full scroll-smooth ${playfair.variable} ${inter.variable}`}>
-      <body className="min-h-full flex flex-col font-sans relative overflow-x-hidden bg-background text-text">
+      <body suppressHydrationWarning className="min-h-full flex flex-col font-sans relative overflow-x-hidden bg-background text-text">
         <RenderAntiSleep />
         <EliteLoader />
         {children}

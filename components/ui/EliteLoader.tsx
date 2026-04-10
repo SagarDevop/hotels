@@ -23,7 +23,7 @@ const EliteLoader = () => {
                         opacity: 0,
                         transition: { duration: 0.4, ease: [0.65, 0, 0.35, 1] } 
                     }}
-                    className="fixed inset-0 z-[999] bg-white flex flex-col items-center justify-center overflow-hidden"
+                    className="fixed inset-0 z-[999] bg-white flex flex-col items-center justify-center overflow-hidden pointer-events-none"
                 >
                     {/* Branding */}
                     <div className="relative flex flex-col items-center gap-4">

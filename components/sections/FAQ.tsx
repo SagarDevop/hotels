@@ -9,14 +9,19 @@ import { siteConfig } from "@/lib/siteConfig";
 
 const faqs = [
   {
-    icon: <Clock size={18} />,
-    question: "What are the check-in and check-out timings?",
-    answer: "Check-in is at 12:00 PM and check-out is at 11:00 AM. If the room is vacant, we are happy to provide early check-in for pilgrims arriving by early trains."
+    icon: <Users size={18} />,
+    question: "Do you allow unmarried couples?",
+    answer: "To maintain a safe and comfortable environment for our family guests, we only permit families and married couples. A valid ID proof for all guests is mandatory at check-in."
   },
   {
     icon: <ShieldCheck size={18} />,
-    question: "Is the location safe for families?",
-    answer: "Absolutely. We are located directly opposite the Dampier Nagar Police Chowki. This is considered one of the safest and most premium residential areas in Mathura."
+    question: "What ID proofs are accepted?",
+    answer: "We accept original Aadhaar Cards, Voter IDs, or passports. Digital copies or soft copies are also acceptable for verification."
+  },
+  {
+    icon: <Clock size={18} />,
+    question: "What are the check-in and check-out timings?",
+    answer: "Check-in is at 12:00 PM and check-out is at 11:00 AM. If the room is vacant, we are happy to provide early check-in for pilgrims arriving by early trains."
   },
   {
     icon: <UtensilsCrossed size={18} />,
@@ -29,19 +34,14 @@ const faqs = [
     answer: "The Janmabhoomi temple is just 1.2 km away. Most of our guests prefer a quick 5-minute auto ride or a 15-minute walk through the local Mathura market."
   },
   {
-    icon: <Users size={18} />,
-    question: "Are you a hotel or a homestay?",
-    answer: "We are a premium family-run homestay. We focus on 'Home-Style' hospitality, offering a warmer and more personal experience than a standard budget hotel."
-  },
-  {
     icon: <Car size={18} />,
     question: "Is safe parking available?",
     answer: "Yes, we have dedicated secure parking space right in front of the homestay. Being opposite the police chowki adds an extra layer of security for your vehicle."
   },
   {
-    icon: <Wifi size={18} />,
-    question: "Is high-speed internet available?",
-    answer: "Yes, we provide high-speed WiFi across all rooms, making it ideal for guests who may need to take a quick work call during their spiritual trip."
+    icon: <ShieldCheck size={18} />,
+    question: "Is the location safe for families?",
+    answer: "Absolutely. We are located directly opposite the Dampier Nagar Police Chowki. This is considered one of the safest and most premium residential areas in Mathura."
   },
   {
     icon: <CreditCard size={18} />,

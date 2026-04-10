@@ -15,7 +15,7 @@ import { siteConfig } from "@/lib/siteConfig";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[820px] md:min-h-[720px] lg:min-h-[850px] w-full overflow-hidden flex items-center justify-center">
+    <section className="relative min-h-[100dvh] md:min-h-[720px] lg:min-h-[850px] w-full overflow-hidden flex items-center justify-center">
       {/* Background Image — Mathura Janmabhoomi at golden hour */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/85 z-10" />
@@ -31,7 +31,7 @@ const Hero = () => {
       <div className="absolute inset-0 z-[5] bg-gradient-to-tr from-rose-900/10 via-transparent to-amber-800/10 pointer-events-none" />
 
       {/* Content */}
-      <div className="container mx-auto px-5 h-full flex flex-col justify-center pt-24 pb-32 lg:pt-28 lg:pb-12 relative z-20">
+      <div className="container mx-auto px-5 h-full flex flex-col justify-center pt-20 pb-24 md:pt-24 md:pb-32 relative z-20">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -52,20 +52,20 @@ const Hero = () => {
               className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/10"
             >
               <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-bold text-white/90">
-                Opposite Police Chowki • Dampier Nagar, Mathura
+              <span className="text-[9px] md:text-[11px] uppercase tracking-[0.2em] font-bold text-white/90">
+                Opp. Police Chowki • Dampier Nagar, Mathura
               </span>
             </motion.div>
 
             {/* Headline — Brilliantly Sharp & Specific */}
-            <h1 className="text-[32px] md:text-5xl lg:text-[64px] font-serif leading-[1.1] tracking-[-0.02em] text-white drop-shadow-xl max-w-4xl">
-              Stay 10 Minutes from <br className="hidden md:block" />
-              <span className="text-primary-light italic">Krishna Janmabhoomi</span> — Safe Family Homestay 
+            <h1 className="text-[28px] md:text-5xl lg:text-[64px] font-serif leading-[1.2] md:leading-[1.1] tracking-[-0.02em] text-white drop-shadow-xl max-w-4xl px-2">
+              Safe Family Stay <br className="hidden md:block" />
+              <span className="text-primary-light italic">10 Mins</span> from Janmabhoomi
             </h1>
 
-            {/* Subheadline — Hindi Touch for Relatability */}
-            <p className="max-w-2xl text-[16px] md:text-xl font-sans text-white/95 leading-relaxed font-light drop-shadow-sm">
-              Mandir ki bheed ke baad, ek shaant aur safe jagah jahan aap aaram se rest kar sakein — <span className="font-medium">AC rooms, ghar jaisa khana</span>, aur prime Dampier Nagar location.
+            {/* Subheadline — Hinglish for Relatability */}
+            <p className="max-w-xl text-[14px] md:text-xl font-sans text-white/95 leading-relaxed font-light drop-shadow-sm px-4">
+              Dampier Nagar ki shaant galiyon mein <span className="font-medium">AC rooms, ghar jaisa khana</span>, aur premium safety.
             </p>
 
             {/* DUAL CTA SYSTEM — The Conversion Engine */}
@@ -73,7 +73,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.6 }}
-              className="flex flex-col sm:flex-row items-center gap-4 mt-4 w-full justify-center"
+              className="flex flex-col sm:flex-row items-center gap-3 mt-4 w-full justify-center px-4"
             >
               {/* PRIMARY — WhatsApp (The Talker Path) */}
               <a
@@ -85,10 +85,10 @@ const Hero = () => {
                 <Button
                   variant="whatsapp"
                   size="xl"
-                  className="w-full sm:min-w-[340px] h-16 shadow-[0_12px_40px_rgba(37,211,102,0.4)] text-lg gap-3 font-bold"
+                  className="w-full sm:min-w-[340px] h-14 md:h-16 shadow-[0_12px_40px_rgba(37,211,102,0.4)] text-base md:text-lg gap-3 font-black uppercase tracking-wider"
                 >
-                  <WhatsAppIcon size={22} className="fill-white" />
-                  Check Room Availability
+                  <WhatsAppIcon size={20} className="fill-white" />
+                  Check Availability
                 </Button>
               </a>
 

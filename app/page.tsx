@@ -29,6 +29,8 @@ import DarshanPlanning from "@/components/sections/DarshanPlanning";
 import { motion, useScroll, useSpring } from "framer-motion";
 import StickyMobileCTA from "@/components/ui/StickyMobileCTA";
 
+import HighlightsMerged from "@/components/sections/HighlightsMerged";
+
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -38,7 +40,7 @@ export default function Home() {
   });
 
   return (
-    <main className="relative bg-background overflow-hidden">
+    <div className="relative min-h-screen flex flex-col">
       {/* Scroll Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-[3px] saffron-gradient z-[100] origin-left"
@@ -47,59 +49,40 @@ export default function Home() {
 
       <Navbar />
       
-      {/* Sections — Optimized Conversion Flow (Phase 2) */}
-      <div className="flex flex-col">
-        <Hero />
-        <TrustStrip />
+      {/* 🚀 HIGH-CONVERTING MOBILE FLOW (Phase 5) */}
+      <main className="relative bg-background overflow-hidden flex-grow">
+        <div className="flex flex-col">
+          {/* 1. Value Proposition (Immediate Trust) */}
+          <Hero />
+          <TrustStrip />
 
-        {/* EMOTION: The 'Why' (Rest & Relief) */}
-        <AfterDarshan />
+          {/* 2. Selection & Urgency (Move Rooms High for Mobile) */}
+          <Rooms />
 
-        {/* LOGIC: The 'Comparison' (Obvious Choice) */}
-        <WhyChooseUs />
+          {/* 3. Social Proof (Move Reviews up to Section 3) */}
+          <Reviews />
 
-        {/* HIGH VALUE: Bundled Packages (Phase 4) */}
-        <Packages />
+          {/* 4. The Benefit Block (Merged: Comfort, Food, Safety) */}
+          <HighlightsMerged />
 
-        {/* SELECTION: The 'Rooms' (Scarcity & Choice) */}
-        <Rooms />
+          {/* 5. Logistics (Map & Distance markers) */}
+          <LocationAdvantage />
 
-        {/* FEATURES: Property Amenities (Newly Added) */}
-        <Amenities />
+          {/* 6. Visual Proof (Gallery) */}
+          <Gallery />
 
-        {/* UPSELL: Enhance the Stay (Phase 4) */}
-        <Addons />
-
-        {/* LOCAL GUIDANCE: Expert Darshan Planning (Visual) */}
-        <DarshanPlanning />
-
-        {/* COMFORT: Food and Amenity Proof */}
-        <Food />
-        
-        {/* LOGISTICS: Map & Location Advantage */}
-        <LocationAdvantage />
-
-        {/* PERSUASION: Trust & Proof */}
-        <Reviews />
-        <Rules />
-        <FAQ />
-        
-        {/* VISUALS: Final Look */}
-        <Gallery />
-
-        {/* FINAL CLOSURE: Hesitation Removal & Last Push */}
-        <HesitationBlock />
-
-        {/* VIRALITY: Referral and Incentives */}
-        <ReferralSection />
-        
-        <FinalCTA />
-      </div>
+          {/* 7. Confidence & FAQ (Rules integrated into FAQ) */}
+          <FAQ />
+          
+          {/* 8. Final Push */}
+          <FinalCTA />
+        </div>
+      </main>
 
       <Footer />
 
       {/* Mobile Sticky CTA */}
       <StickyMobileCTA />
-    </main>
+    </div>
   );
 }

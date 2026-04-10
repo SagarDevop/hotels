@@ -79,10 +79,11 @@ const UrgencyToast = () => {
                             </span>
                          </div>
                          <button 
-                            className="absolute top-2 right-2 text-text-muted/30 hover:text-primary transition-colors p-1"
+                            className="absolute top-2 right-2 text-text-muted/40 hover:text-primary transition-colors p-2 rounded-full hover:bg-black/5"
                             onClick={() => setVisible(false)}
+                            aria-label="Close notification"
                          >
-                            <X size={14} />
+                            <X size={18} />
                          </button>
                     </motion.div>
                 )}

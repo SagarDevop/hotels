@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
 
 const images = [
   { src: "/assets/gallery_room_1.jpg", alt: "King Deluxe Bedroom — Spacious & Modern", span: "row-span-2 col-span-2" },
@@ -19,13 +20,14 @@ const Gallery = () => {
     <section id="gallery" className="py-16 md:py-20 bg-surface">
       <div className="container mx-auto px-5">
         <div className="text-center mb-10 space-y-3">
-            <span className="text-primary uppercase tracking-[0.3em] text-sm font-bold">Gallery</span>
+            <span className="text-primary uppercase tracking-[0.3em] text-sm font-bold">Property Tour</span>
             <h2 className="text-3xl md:text-4xl font-serif text-text">
-              A Glimpse of <span className="italic text-primary">Your Stay</span>
+              Real Photos of <span className="italic text-primary">Naari Homestay</span>
             </h2>
-            <p className="text-text-muted text-base font-light">
-              Real photos of our hotel, rooms, food, and nearby places
-            </p>
+            <div className="flex items-center justify-center gap-2 text-emerald-600 font-bold text-[10px] uppercase tracking-widest mt-2">
+                <CheckCircle2 size={12} />
+                No Stock Images • What you see is what you get
+            </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-2.5 md:gap-3 auto-rows-[180px] md:auto-rows-[220px]">
